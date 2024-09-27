@@ -3,16 +3,16 @@
   "WorkspaceRootPath": "C:\\Users\\Juan\\Downloads\\2024\\2024B\\Desarrollo de Aplicaciones Empresariales\\Corte2\\Semana 7\\Prototipo\\ClientePublicacion\\Cliente\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{8A9F1A7D-9E78-416F-9891-75CDED958953}|Cliente\\Cliente.csproj|c:\\users\\juan\\downloads\\2024\\2024b\\desarrollo de aplicaciones empresariales\\corte2\\semana 7\\prototipo\\clientepublicacion\\cliente\\cliente\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8A9F1A7D-9E78-416F-9891-75CDED958953}|Cliente\\Cliente.csproj|solutionrelative:cliente\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Juan\\Downloads\\2024\\2024B\\Desarrollo de Aplicaciones Empresariales\\Corte2\\Semana 7\\Prototipo\\ClientePublicacion\\Cliente\\Cliente\\Form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Cliente\\Form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8A9F1A7D-9E78-416F-9891-75CDED958953}|Cliente\\Cliente.csproj|c:\\users\\juan\\downloads\\2024\\2024b\\desarrollo de aplicaciones empresariales\\corte2\\semana 7\\prototipo\\clientepublicacion\\cliente\\cliente\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{8A9F1A7D-9E78-416F-9891-75CDED958953}|Cliente\\Cliente.csproj|solutionrelative:cliente\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Juan\\Downloads\\2024\\2024B\\Desarrollo de Aplicaciones Empresariales\\Corte2\\Semana 7\\Prototipo\\ClientePublicacion\\Cliente\\cliente\\form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:cliente\\form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8A9F1A7D-9E78-416F-9891-75CDED958953}|Cliente\\Cliente.csproj|c:\\users\\juan\\downloads\\2024\\2024b\\desarrollo de aplicaciones empresariales\\corte2\\semana 7\\prototipo\\clientepublicacion\\cliente\\cliente\\form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{8A9F1A7D-9E78-416F-9891-75CDED958953}|Cliente\\Cliente.csproj|solutionrelative:cliente\\form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Juan\\Downloads\\2024\\2024B\\Desarrollo de Aplicaciones Empresariales\\Corte2\\Semana 7\\Prototipo\\ClientePublicacion\\Cliente\\cliente\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:cliente\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,15 +26,14 @@
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
               "Title": "Form2.cs [Dise\u00F1o]",
               "DocumentMoniker": "C:\\Users\\Juan\\Downloads\\2024\\2024B\\Desarrollo de Aplicaciones Empresariales\\Corte2\\Semana 7\\Prototipo\\ClientePublicacion\\Cliente\\Cliente\\Form2.cs",
               "RelativeDocumentMoniker": "Cliente\\Form2.cs",
               "ToolTip": "C:\\Users\\Juan\\Downloads\\2024\\2024B\\Desarrollo de Aplicaciones Empresariales\\Corte2\\Semana 7\\Prototipo\\ClientePublicacion\\Cliente\\Cliente\\Form2.cs [Dise\u00F1o]",
               "RelativeToolTip": "Cliente\\Form2.cs [Dise\u00F1o]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-27T05:45:13.019Z",
-              "EditorCaption": " [Dise\u00F1o]"
+              "WhenOpened": "2024-09-27T05:45:13.019Z"
             },
             {
               "$type": "Document",
@@ -44,22 +43,21 @@
               "RelativeDocumentMoniker": "Cliente\\Form1.cs",
               "ToolTip": "C:\\Users\\Juan\\Downloads\\2024\\2024B\\Desarrollo de Aplicaciones Empresariales\\Corte2\\Semana 7\\Prototipo\\ClientePublicacion\\Cliente\\Cliente\\Form1.cs",
               "RelativeToolTip": "Cliente\\Form1.cs",
-              "ViewState": "AQIAABYAAAAAAAAAAAAgwCEAAAAZAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACEAAAAZAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-09-27T05:40:41.657Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "Form1.cs [Dise\u00F1o]",
               "DocumentMoniker": "C:\\Users\\Juan\\Downloads\\2024\\2024B\\Desarrollo de Aplicaciones Empresariales\\Corte2\\Semana 7\\Prototipo\\ClientePublicacion\\Cliente\\Cliente\\Form1.cs",
               "RelativeDocumentMoniker": "Cliente\\Form1.cs",
               "ToolTip": "C:\\Users\\Juan\\Downloads\\2024\\2024B\\Desarrollo de Aplicaciones Empresariales\\Corte2\\Semana 7\\Prototipo\\ClientePublicacion\\Cliente\\Cliente\\Form1.cs [Dise\u00F1o]",
               "RelativeToolTip": "Cliente\\Form1.cs [Dise\u00F1o]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-27T05:40:31.386Z",
-              "EditorCaption": " [Dise\u00F1o]"
+              "WhenOpened": "2024-09-27T05:40:31.386Z"
             }
           ]
         }
