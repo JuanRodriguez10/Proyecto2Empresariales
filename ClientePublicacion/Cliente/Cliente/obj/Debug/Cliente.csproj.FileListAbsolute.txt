@@ -22,10 +22,11 @@ C:\Users\Juan\Downloads\2024\2024B\Desarrollo de Aplicaciones Empresariales\Cort
 C:\Users\Juan\Downloads\2024\2024B\Desarrollo de Aplicaciones Empresariales\Corte2\Semana 7\Prototipo\ClientePublicacion\Cliente\Cliente\bin\Debug\System.Threading.Tasks.Extensions.xml
 C:\Users\Juan\Downloads\2024\2024B\Desarrollo de Aplicaciones Empresariales\Corte2\Semana 7\Prototipo\ClientePublicacion\Cliente\Cliente\bin\Debug\System.ValueTuple.xml
 C:\Users\Juan\Downloads\2024\2024B\Desarrollo de Aplicaciones Empresariales\Corte2\Semana 7\Prototipo\ClientePublicacion\Cliente\Cliente\obj\Debug\Cliente.csproj.AssemblyReference.cache
-C:\Users\Juan\Downloads\2024\2024B\Desarrollo de Aplicaciones Empresariales\Corte2\Semana 7\Prototipo\ClientePublicacion\Cliente\Cliente\obj\Debug\Cliente.Form1.resources
 C:\Users\Juan\Downloads\2024\2024B\Desarrollo de Aplicaciones Empresariales\Corte2\Semana 7\Prototipo\ClientePublicacion\Cliente\Cliente\obj\Debug\Cliente.Properties.Resources.resources
 C:\Users\Juan\Downloads\2024\2024B\Desarrollo de Aplicaciones Empresariales\Corte2\Semana 7\Prototipo\ClientePublicacion\Cliente\Cliente\obj\Debug\Cliente.csproj.GenerateResource.cache
 C:\Users\Juan\Downloads\2024\2024B\Desarrollo de Aplicaciones Empresariales\Corte2\Semana 7\Prototipo\ClientePublicacion\Cliente\Cliente\obj\Debug\Cliente.csproj.CoreCompileInputs.cache
 C:\Users\Juan\Downloads\2024\2024B\Desarrollo de Aplicaciones Empresariales\Corte2\Semana 7\Prototipo\ClientePublicacion\Cliente\Cliente\obj\Debug\Cliente.csproj.Up2Date
 C:\Users\Juan\Downloads\2024\2024B\Desarrollo de Aplicaciones Empresariales\Corte2\Semana 7\Prototipo\ClientePublicacion\Cliente\Cliente\obj\Debug\Cliente.exe
 C:\Users\Juan\Downloads\2024\2024B\Desarrollo de Aplicaciones Empresariales\Corte2\Semana 7\Prototipo\ClientePublicacion\Cliente\Cliente\obj\Debug\Cliente.pdb
+C:\Users\Juan\Downloads\2024\2024B\Desarrollo de Aplicaciones Empresariales\Corte2\Semana 7\Prototipo\ClientePublicacion\Cliente\Cliente\obj\Debug\Cliente.GUIPrincipal.resources
+C:\Users\Juan\Downloads\2024\2024B\Desarrollo de Aplicaciones Empresariales\Corte2\Semana 7\Prototipo\ClientePublicacion\Cliente\Cliente\obj\Debug\Cliente.GUIAgregar.resources

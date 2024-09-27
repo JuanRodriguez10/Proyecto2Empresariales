@@ -10,11 +10,16 @@ using System.Windows.Forms;
 
 namespace Cliente
 {
-    public partial class Form2 : Form
+    public partial class GUIAgregar : Form
     {
-        public Form2()
+        public GUIAgregar()
         {
             InitializeComponent();
+        }
+
+        private void lblCantidadPaginas_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
