@@ -1,4 +1,4 @@
-﻿//using RestSharp;
+﻿using RestSharp;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -20,7 +20,18 @@ namespace Cliente
 
         private void button1_Click(object sender, EventArgs e)
         {
-            var options = new RestClientOptions
+            
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void agregarToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Form2 form2 = new Form2();
+            form2.Show();
         }
     }
 }
