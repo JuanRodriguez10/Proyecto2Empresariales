@@ -30,3 +30,7 @@ C:\Users\Juan\Downloads\2024\2024B\Desarrollo de Aplicaciones Empresariales\Cort
 C:\Users\Juan\Downloads\2024\2024B\Desarrollo de Aplicaciones Empresariales\Corte2\Semana 7\Prototipo\ClientePublicacion\Cliente\Cliente\obj\Debug\Cliente.pdb
 C:\Users\Juan\Downloads\2024\2024B\Desarrollo de Aplicaciones Empresariales\Corte2\Semana 7\Prototipo\ClientePublicacion\Cliente\Cliente\obj\Debug\Cliente.GUIPrincipal.resources
 C:\Users\Juan\Downloads\2024\2024B\Desarrollo de Aplicaciones Empresariales\Corte2\Semana 7\Prototipo\ClientePublicacion\Cliente\Cliente\obj\Debug\Cliente.GUIAgregar.resources
+C:\Users\Juan\Downloads\2024\2024B\Desarrollo de Aplicaciones Empresariales\Corte2\Semana 7\Prototipo\ClientePublicacion\Cliente\Cliente\obj\Debug\Cliente.GUIBuscar.resources
+C:\Users\Juan\Downloads\2024\2024B\Desarrollo de Aplicaciones Empresariales\Corte2\Semana 7\Prototipo\ClientePublicacion\Cliente\Cliente\obj\Debug\Cliente.GUIActualizar.resources
+C:\Users\Juan\Downloads\2024\2024B\Desarrollo de Aplicaciones Empresariales\Corte2\Semana 7\Prototipo\ClientePublicacion\Cliente\Cliente\obj\Debug\Cliente.GUIEliminar.resources
+C:\Users\Juan\Downloads\2024\2024B\Desarrollo de Aplicaciones Empresariales\Corte2\Semana 7\Prototipo\ClientePublicacion\Cliente\Cliente\obj\Debug\Cliente.GUIListar.resources

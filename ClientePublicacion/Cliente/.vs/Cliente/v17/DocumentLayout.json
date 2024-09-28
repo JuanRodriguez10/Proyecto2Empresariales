@@ -1,69 +1,12 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\Juan\\Downloads\\2024\\2024B\\Desarrollo de Aplicaciones Empresariales\\Corte2\\Semana 7\\Prototipo\\ClientePublicacion\\Cliente\\",
-  "Documents": [
-    {
-      "AbsoluteMoniker": "D:0:0:{8A9F1A7D-9E78-416F-9891-75CDED958953}|Cliente\\Cliente.csproj|c:\\users\\juan\\downloads\\2024\\2024b\\desarrollo de aplicaciones empresariales\\corte2\\semana 7\\prototipo\\clientepublicacion\\cliente\\cliente\\guiprincipal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{8A9F1A7D-9E78-416F-9891-75CDED958953}|Cliente\\Cliente.csproj|solutionrelative:cliente\\guiprincipal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8A9F1A7D-9E78-416F-9891-75CDED958953}|Cliente\\Cliente.csproj|c:\\users\\juan\\downloads\\2024\\2024b\\desarrollo de aplicaciones empresariales\\corte2\\semana 7\\prototipo\\clientepublicacion\\cliente\\cliente\\guiagregar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{8A9F1A7D-9E78-416F-9891-75CDED958953}|Cliente\\Cliente.csproj|solutionrelative:cliente\\guiagregar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8A9F1A7D-9E78-416F-9891-75CDED958953}|Cliente\\Cliente.csproj|c:\\users\\juan\\downloads\\2024\\2024b\\desarrollo de aplicaciones empresariales\\corte2\\semana 7\\prototipo\\clientepublicacion\\cliente\\cliente\\guiagregar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8A9F1A7D-9E78-416F-9891-75CDED958953}|Cliente\\Cliente.csproj|solutionrelative:cliente\\guiagregar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    }
-  ],
+  "Documents": [],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
       "VerticalTabListWidth": 256,
-      "DocumentGroups": [
-        {
-          "DockedWidth": 200,
-          "SelectedChildIndex": 2,
-          "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "GUIAgregar.cs",
-              "DocumentMoniker": "C:\\Users\\Juan\\Downloads\\2024\\2024B\\Desarrollo de Aplicaciones Empresariales\\Corte2\\Semana 7\\Prototipo\\ClientePublicacion\\Cliente\\Cliente\\GUIAgregar.cs",
-              "RelativeDocumentMoniker": "Cliente\\GUIAgregar.cs",
-              "ToolTip": "C:\\Users\\Juan\\Downloads\\2024\\2024B\\Desarrollo de Aplicaciones Empresariales\\Corte2\\Semana 7\\Prototipo\\ClientePublicacion\\Cliente\\Cliente\\GUIAgregar.cs",
-              "RelativeToolTip": "Cliente\\GUIAgregar.cs",
-              "ViewState": "AQIAABAAAAAAAAAAAAAgwBcAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-27T16:00:59.526Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "GUIAgregar.cs [Dise\u00F1o]",
-              "DocumentMoniker": "C:\\Users\\Juan\\Downloads\\2024\\2024B\\Desarrollo de Aplicaciones Empresariales\\Corte2\\Semana 7\\Prototipo\\ClientePublicacion\\Cliente\\Cliente\\GUIAgregar.cs",
-              "RelativeDocumentMoniker": "Cliente\\GUIAgregar.cs",
-              "ToolTip": "C:\\Users\\Juan\\Downloads\\2024\\2024B\\Desarrollo de Aplicaciones Empresariales\\Corte2\\Semana 7\\Prototipo\\ClientePublicacion\\Cliente\\Cliente\\GUIAgregar.cs [Dise\u00F1o]",
-              "RelativeToolTip": "Cliente\\GUIAgregar.cs [Dise\u00F1o]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-27T15:40:34.556Z",
-              "EditorCaption": " [Dise\u00F1o]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "GUIPrincipal.cs [Dise\u00F1o]",
-              "DocumentMoniker": "C:\\Users\\Juan\\Downloads\\2024\\2024B\\Desarrollo de Aplicaciones Empresariales\\Corte2\\Semana 7\\Prototipo\\ClientePublicacion\\Cliente\\Cliente\\GUIPrincipal.cs",
-              "RelativeDocumentMoniker": "Cliente\\GUIPrincipal.cs",
-              "ToolTip": "C:\\Users\\Juan\\Downloads\\2024\\2024B\\Desarrollo de Aplicaciones Empresariales\\Corte2\\Semana 7\\Prototipo\\ClientePublicacion\\Cliente\\Cliente\\GUIPrincipal.cs [Dise\u00F1o]",
-              "RelativeToolTip": "Cliente\\GUIPrincipal.cs [Dise\u00F1o]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-27T15:38:24.569Z",
-              "EditorCaption": " [Dise\u00F1o]"
-            }
-          ]
-        }
-      ]
+      "DocumentGroups": []
     }
   ]
 }

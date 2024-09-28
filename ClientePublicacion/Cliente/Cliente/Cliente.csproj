@@ -78,6 +78,30 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="GUIListar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUIListar.Designer.cs">
+      <DependentUpon>GUIListar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUIEliminar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUIEliminar.Designer.cs">
+      <DependentUpon>GUIEliminar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUIActualizar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUIActualizar.Designer.cs">
+      <DependentUpon>GUIActualizar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUIBuscar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUIBuscar.Designer.cs">
+      <DependentUpon>GUIBuscar.cs</DependentUpon>
+    </Compile>
     <Compile Include="GUIPrincipal.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -92,6 +116,18 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="GUIListar.resx">
+      <DependentUpon>GUIListar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUIEliminar.resx">
+      <DependentUpon>GUIEliminar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUIActualizar.resx">
+      <DependentUpon>GUIActualizar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUIBuscar.resx">
+      <DependentUpon>GUIBuscar.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="GUIAgregar.resx">
       <DependentUpon>GUIAgregar.cs</DependentUpon>
     </EmbeddedResource>

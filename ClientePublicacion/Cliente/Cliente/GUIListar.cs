@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Cliente
 {
-    public partial class GUIAgregar : Form
+    public partial class GUIListar : Form
     {
-        public GUIAgregar()
+        public GUIListar()
         {
             InitializeComponent();
         }
@@ -22,12 +22,7 @@ namespace Cliente
 
         }
 
-        private void GUIAgregar_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void txtTitulo_TextChanged(object sender, EventArgs e)
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
 
         }

@@ -10,24 +10,15 @@ using System.Windows.Forms;
 
 namespace Cliente
 {
-    public partial class GUIAgregar : Form
+    public partial class GUIBuscar : Form
     {
-        public GUIAgregar()
+        public GUIBuscar()
         {
             InitializeComponent();
+            this.ActiveControl = txtBuscar;
         }
 
         private void lblCantidadPaginas_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void GUIAgregar_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void txtTitulo_TextChanged(object sender, EventArgs e)
         {
 
         }
