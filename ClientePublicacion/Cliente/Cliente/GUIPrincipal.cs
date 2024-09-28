@@ -75,7 +75,7 @@ namespace Cliente
                     "Juan Esteban Rodriguez Castellanos\n" +
                     "Cod.2220221063\n\n" +
                     "Desarrollo de Aplicaciones Empresariales\n" +
-                    "Version 2.0";
+                    "Version 1.0";
 
 MessageBox.Show(desarrollo, "Información", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
