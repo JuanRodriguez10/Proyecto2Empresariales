@@ -15,14 +15,6 @@ public class ServicioLibro {
 
     private ServicioLibro(){
         libros = new ArrayList<Libro>();
-
-        libros.add(new Libro(1,1,"a",LocalDateTime.of(2023, 9, 26, 10, 30),"a"));
-        libros.add(new Libro(1,1,"b",LocalDateTime.of(2023, 9, 26, 10, 30),"b"));
-        libros.add(new Libro(1,1,"c",LocalDateTime.of(2023, 9, 26, 10, 30),"a"));
-        libros.add(new Libro(1,1,"d",LocalDateTime.of(2023, 9, 26, 10, 30),"d"));
-
-
-
     }
 
     public static ServicioLibro getServicioLibro(){

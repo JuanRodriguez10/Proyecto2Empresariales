@@ -127,6 +127,7 @@
             this.txtPaginas.Name = "txtPaginas";
             this.txtPaginas.Size = new System.Drawing.Size(200, 20);
             this.txtPaginas.TabIndex = 8;
+            this.txtPaginas.TextChanged += new System.EventHandler(this.txtPaginas_TextChanged);
             // 
             // txtPrecio
             // 

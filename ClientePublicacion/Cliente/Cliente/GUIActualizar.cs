@@ -130,5 +130,10 @@ namespace Cliente
             txtPrecio.Text = "";
             tituloOriginal = null;
         }
+
+        private void txtPaginas_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

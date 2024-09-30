@@ -37,36 +37,62 @@ namespace Cliente
 
         private void btnAgregar_Click(object sender, EventArgs e)
         {
-            var paginasTexto = txtPaginas.Text.Trim();
-            int paginas = int.Parse(paginasTexto);
-
-            var precioTexto = txtPrecio.Text.Trim();
-            double precio = double.Parse(precioTexto);
-
-            var titulo = txtTitulo.Text.Trim();
-
-            DateTime fecha = dpFecha.Value;
-
-            var autor = txtAutor.Text.Trim();
-
-            bool agregado = servicioLibro.AgregarLibro(paginas, precio, titulo, fecha, autor);
-
-            if (agregado)
+            try
             {
-                txtPaginas.Text = "";
-                txtPrecio.Text = "";
-                txtTitulo.Text = "";
-                dpFecha.Value = DateTime.Now;
-                txtAutor.Text = "";
+                var paginasTexto = txtPaginas.Text.Trim();
+                if (!int.TryParse(paginasTexto, out int paginas))
+                {
+                    MessageBox.Show("El número de páginas debe ser un valor numérico entero.", "Error de entrada", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    return;
+                }
 
-                MessageBox.Show("El libro fue agregado exitosamente.", "Confirmación", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                var precioTexto = txtPrecio.Text.Trim();
+                if (!double.TryParse(precioTexto, out double precio))
+                {
+                    MessageBox.Show("El precio debe ser un valor numérico válido.", "Error de entrada", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    return;
+                }
+
+                var titulo = txtTitulo.Text.Trim();
+                if (string.IsNullOrEmpty(titulo))
+                {
+                    MessageBox.Show("El título no puede estar vacío.", "Error de entrada", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    return;
+                }
+
+                DateTime fecha = dpFecha.Value;
+
+                var autor = txtAutor.Text.Trim();
+                if (string.IsNullOrEmpty(autor))
+                {
+                    MessageBox.Show("El autor no puede estar vacío.", "Error de entrada", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    return;
+                }
+
+                bool agregado = servicioLibro.AgregarLibro(paginas, precio, titulo, fecha, autor);
+                if (agregado)
+                {
+                    LimpiarCampos();
+                    MessageBox.Show("El libro fue agregado exitosamente.", "Confirmación", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+                else
+                {
+                    MessageBox.Show("Hubo un error al agregar el libro.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
             }
-            else
+            catch (Exception ex)
             {
-                MessageBox.Show("Hubo un error al agregar el libro.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show($"Se produjo un error inesperado: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
+        }
 
-
+        private void LimpiarCampos()
+        {
+            txtPaginas.Text = "";
+            txtPrecio.Text = "";
+            txtTitulo.Text = "";
+            dpFecha.Value = DateTime.Now;
+            txtAutor.Text = "";
         }
     }
 }

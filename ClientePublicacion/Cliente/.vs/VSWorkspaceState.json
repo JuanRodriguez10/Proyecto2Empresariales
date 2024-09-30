@@ -1,7 +1,8 @@
 {
   "ExpandedNodes": [
     "",
-    "\\Cliente"
+    "\\Cliente",
+    "\\Cliente\\Service"
   ],
   "SelectedNode": "\\Cliente.sln",
   "PreviewInSolutionExplorer": false
