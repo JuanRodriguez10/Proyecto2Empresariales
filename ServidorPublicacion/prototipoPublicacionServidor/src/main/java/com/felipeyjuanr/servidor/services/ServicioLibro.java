@@ -18,7 +18,7 @@ public class ServicioLibro {
 
         libros.add(new Libro(1,1,"a",LocalDateTime.of(2023, 9, 26, 10, 30),"a"));
         libros.add(new Libro(1,1,"b",LocalDateTime.of(2023, 9, 26, 10, 30),"b"));
-        libros.add(new Libro(1,1,"c",LocalDateTime.of(2023, 9, 26, 10, 30),"c"));
+        libros.add(new Libro(1,1,"c",LocalDateTime.of(2023, 9, 26, 10, 30),"a"));
         libros.add(new Libro(1,1,"d",LocalDateTime.of(2023, 9, 26, 10, 30),"d"));
 
 
@@ -37,6 +37,16 @@ public class ServicioLibro {
         return libros;
     }
 
+    public ArrayList<Libro> getLibrosAutor(String autor) {
+        ArrayList<Libro> autores = new ArrayList<Libro>();
+        for(Libro librito : libros){
+            if(librito.getAutor().equalsIgnoreCase(autor)){
+                autores.add(librito);
+            }
+        }
+        return autores;
+    }
+
     public boolean agregarLibro(int cantidadPaginas, double precio, String titulo, LocalDateTime fechaCreacion, String autor)
     {
         Libro libro = null;
@@ -44,7 +54,7 @@ public class ServicioLibro {
         libro = new Libro(cantidadPaginas, precio, titulo, fechaCreacion, autor);
 
 
-        if (verificarExistencia(libro.getTitulo())==null)
+        if (buscarLibroCompleto(libro.getTitulo(),libro.getAutor())==null)
         {
             libros.add(libro);
             return true;
@@ -52,10 +62,10 @@ public class ServicioLibro {
         return false;
     }
 
-    public Libro verificarExistencia(String titulo)
+    public Libro buscarLibroCompleto(String titulo, String autor)
     {
         for (Libro librito : libros) {
-            if (librito.getTitulo().equalsIgnoreCase(titulo)) {
+            if (librito.getTitulo().equalsIgnoreCase(titulo) && librito.getAutor().equalsIgnoreCase(autor)) {
                 return librito;
             }
         }
@@ -63,23 +73,29 @@ public class ServicioLibro {
         return null;
     }
 
-    public Libro buscarLibro(String titulo, String autor) {
-        Libro libro = null;
-
+    public Libro buscarLibroTitulo(String titulo)
+    {
         for (Libro librito : libros) {
-            if (librito.getTitulo().equalsIgnoreCase(titulo) && librito.getAutor().equalsIgnoreCase(autor)) {
+            if (librito.getTitulo().equalsIgnoreCase(titulo)) {
                 return librito;
             }
-            else if(librito.getTitulo().equalsIgnoreCase(titulo) || librito.getAutor().equalsIgnoreCase(autor))
-            {libro = librito;}
         }
+        return null;
+    }
 
-        return libro;
+    public Libro buscarLibroAutor(String autor)
+    {
+        for (Libro librito : libros) {
+            if (librito.getAutor().equalsIgnoreCase(autor)) {
+                return librito;
+            }
+        }
+        return null;
     }
 
     public boolean eliminarLibro(String titulo) {
         boolean eliminado = false;
-        Libro librito = verificarExistencia(titulo);
+        Libro librito = buscarLibroTitulo(titulo);
         eliminado = libros.remove(librito);
         return eliminado;
     }
@@ -92,9 +108,9 @@ public class ServicioLibro {
         nuevo = new Libro(cantidadPaginas, precio , titulo, fechaCreacion, autor);
 
 
-        if (verificarExistencia(tituloAntiguo) != null)
+        if (buscarLibroTitulo(tituloAntiguo) != null)
         {
-            Libro libroAntiguo = verificarExistencia(tituloAntiguo);
+            Libro libroAntiguo = buscarLibroTitulo(tituloAntiguo);
             int index = libros.indexOf(libroAntiguo);
             libros.set(index, nuevo);
 

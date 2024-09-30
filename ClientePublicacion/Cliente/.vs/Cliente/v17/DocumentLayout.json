@@ -1,12 +1,174 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\Juan\\Downloads\\2024\\2024B\\Desarrollo de Aplicaciones Empresariales\\Corte2\\Semana 7\\Prototipo\\ClientePublicacion\\Cliente\\",
-  "Documents": [],
+  "WorkspaceRootPath": "C:\\Users\\juanp\\OneDrive\\Escritorio\\proyecto2Empresariales\\Proyecto2Empresariales\\ClientePublicacion\\Cliente\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{8A9F1A7D-9E78-416F-9891-75CDED958953}|Cliente\\Cliente.csproj|c:\\users\\juanp\\onedrive\\escritorio\\proyecto2empresariales\\proyecto2empresariales\\clientepublicacion\\cliente\\cliente\\service\\serviciolibro.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8A9F1A7D-9E78-416F-9891-75CDED958953}|Cliente\\Cliente.csproj|solutionrelative:cliente\\service\\serviciolibro.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8A9F1A7D-9E78-416F-9891-75CDED958953}|Cliente\\Cliente.csproj|c:\\users\\juanp\\onedrive\\escritorio\\proyecto2empresariales\\proyecto2empresariales\\clientepublicacion\\cliente\\cliente\\guiactualizar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8A9F1A7D-9E78-416F-9891-75CDED958953}|Cliente\\Cliente.csproj|solutionrelative:cliente\\guiactualizar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8A9F1A7D-9E78-416F-9891-75CDED958953}|Cliente\\Cliente.csproj|c:\\users\\juanp\\onedrive\\escritorio\\proyecto2empresariales\\proyecto2empresariales\\clientepublicacion\\cliente\\cliente\\guiactualizar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{8A9F1A7D-9E78-416F-9891-75CDED958953}|Cliente\\Cliente.csproj|solutionrelative:cliente\\guiactualizar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8A9F1A7D-9E78-416F-9891-75CDED958953}|Cliente\\Cliente.csproj|c:\\users\\juanp\\onedrive\\escritorio\\proyecto2empresariales\\proyecto2empresariales\\clientepublicacion\\cliente\\cliente\\guieliminar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8A9F1A7D-9E78-416F-9891-75CDED958953}|Cliente\\Cliente.csproj|solutionrelative:cliente\\guieliminar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8A9F1A7D-9E78-416F-9891-75CDED958953}|Cliente\\Cliente.csproj|c:\\users\\juanp\\onedrive\\escritorio\\proyecto2empresariales\\proyecto2empresariales\\clientepublicacion\\cliente\\cliente\\guieliminar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{8A9F1A7D-9E78-416F-9891-75CDED958953}|Cliente\\Cliente.csproj|solutionrelative:cliente\\guieliminar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8A9F1A7D-9E78-416F-9891-75CDED958953}|Cliente\\Cliente.csproj|c:\\users\\juanp\\onedrive\\escritorio\\proyecto2empresariales\\proyecto2empresariales\\clientepublicacion\\cliente\\cliente\\guibuscar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8A9F1A7D-9E78-416F-9891-75CDED958953}|Cliente\\Cliente.csproj|solutionrelative:cliente\\guibuscar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8A9F1A7D-9E78-416F-9891-75CDED958953}|Cliente\\Cliente.csproj|c:\\users\\juanp\\onedrive\\escritorio\\proyecto2empresariales\\proyecto2empresariales\\clientepublicacion\\cliente\\cliente\\guiagregar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8A9F1A7D-9E78-416F-9891-75CDED958953}|Cliente\\Cliente.csproj|solutionrelative:cliente\\guiagregar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8A9F1A7D-9E78-416F-9891-75CDED958953}|Cliente\\Cliente.csproj|c:\\users\\juanp\\onedrive\\escritorio\\proyecto2empresariales\\proyecto2empresariales\\clientepublicacion\\cliente\\cliente\\guiprincipal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{8A9F1A7D-9E78-416F-9891-75CDED958953}|Cliente\\Cliente.csproj|solutionrelative:cliente\\guiprincipal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8A9F1A7D-9E78-416F-9891-75CDED958953}|Cliente\\Cliente.csproj|c:\\users\\juanp\\onedrive\\escritorio\\proyecto2empresariales\\proyecto2empresariales\\clientepublicacion\\cliente\\cliente\\model\\libro.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8A9F1A7D-9E78-416F-9891-75CDED958953}|Cliente\\Cliente.csproj|solutionrelative:cliente\\model\\libro.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
       "VerticalTabListWidth": 256,
-      "DocumentGroups": []
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 9,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{e506b91c-c606-466a-90a9-123d1d1e12b3}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "GUIActualizar.cs",
+              "DocumentMoniker": "C:\\Users\\juanp\\OneDrive\\Escritorio\\proyecto2Empresariales\\Proyecto2Empresariales\\ClientePublicacion\\Cliente\\Cliente\\GUIActualizar.cs",
+              "RelativeDocumentMoniker": "Cliente\\GUIActualizar.cs",
+              "ToolTip": "C:\\Users\\juanp\\OneDrive\\Escritorio\\proyecto2Empresariales\\Proyecto2Empresariales\\ClientePublicacion\\Cliente\\Cliente\\GUIActualizar.cs",
+              "RelativeToolTip": "Cliente\\GUIActualizar.cs",
+              "ViewState": "AQIAACAAAAAAAAAAAAA9wBIAAAAmAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-30T02:35:45.156Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "GUIActualizar.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\juanp\\OneDrive\\Escritorio\\proyecto2Empresariales\\Proyecto2Empresariales\\ClientePublicacion\\Cliente\\Cliente\\GUIActualizar.cs",
+              "RelativeDocumentMoniker": "Cliente\\GUIActualizar.cs",
+              "ToolTip": "C:\\Users\\juanp\\OneDrive\\Escritorio\\proyecto2Empresariales\\Proyecto2Empresariales\\ClientePublicacion\\Cliente\\Cliente\\GUIActualizar.cs [Dise\u00F1o]",
+              "RelativeToolTip": "Cliente\\GUIActualizar.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-30T02:35:28.194Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "GUIEliminar.cs",
+              "DocumentMoniker": "C:\\Users\\juanp\\OneDrive\\Escritorio\\proyecto2Empresariales\\Proyecto2Empresariales\\ClientePublicacion\\Cliente\\Cliente\\GUIEliminar.cs",
+              "RelativeDocumentMoniker": "Cliente\\GUIEliminar.cs",
+              "ToolTip": "C:\\Users\\juanp\\OneDrive\\Escritorio\\proyecto2Empresariales\\Proyecto2Empresariales\\ClientePublicacion\\Cliente\\Cliente\\GUIEliminar.cs",
+              "RelativeToolTip": "Cliente\\GUIEliminar.cs",
+              "ViewState": "AQIAABkAAAAAAAAAAAAkwF8AAAARAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-30T02:01:41.887Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "GUIEliminar.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\juanp\\OneDrive\\Escritorio\\proyecto2Empresariales\\Proyecto2Empresariales\\ClientePublicacion\\Cliente\\Cliente\\GUIEliminar.cs",
+              "RelativeDocumentMoniker": "Cliente\\GUIEliminar.cs",
+              "ToolTip": "C:\\Users\\juanp\\OneDrive\\Escritorio\\proyecto2Empresariales\\Proyecto2Empresariales\\ClientePublicacion\\Cliente\\Cliente\\GUIEliminar.cs [Dise\u00F1o]",
+              "RelativeToolTip": "Cliente\\GUIEliminar.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-30T02:01:11.247Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "GUIBuscar.cs",
+              "DocumentMoniker": "C:\\Users\\juanp\\OneDrive\\Escritorio\\proyecto2Empresariales\\Proyecto2Empresariales\\ClientePublicacion\\Cliente\\Cliente\\GUIBuscar.cs",
+              "RelativeDocumentMoniker": "Cliente\\GUIBuscar.cs",
+              "ToolTip": "C:\\Users\\juanp\\OneDrive\\Escritorio\\proyecto2Empresariales\\Proyecto2Empresariales\\ClientePublicacion\\Cliente\\Cliente\\GUIBuscar.cs",
+              "RelativeToolTip": "Cliente\\GUIBuscar.cs",
+              "ViewState": "AQIAADIAAAAAAAAAAAAIwCIAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-29T03:23:14.677Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "GUIAgregar.cs",
+              "DocumentMoniker": "C:\\Users\\juanp\\OneDrive\\Escritorio\\proyecto2Empresariales\\Proyecto2Empresariales\\ClientePublicacion\\Cliente\\Cliente\\GUIAgregar.cs",
+              "RelativeDocumentMoniker": "Cliente\\GUIAgregar.cs",
+              "ToolTip": "C:\\Users\\juanp\\OneDrive\\Escritorio\\proyecto2Empresariales\\Proyecto2Empresariales\\ClientePublicacion\\Cliente\\Cliente\\GUIAgregar.cs",
+              "RelativeToolTip": "Cliente\\GUIAgregar.cs",
+              "ViewState": "AQIAACMAAAAAAAAAAAAIwDcAAAAlAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-28T22:41:15.458Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "GUIPrincipal.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\juanp\\OneDrive\\Escritorio\\proyecto2Empresariales\\Proyecto2Empresariales\\ClientePublicacion\\Cliente\\Cliente\\GUIPrincipal.cs",
+              "RelativeDocumentMoniker": "Cliente\\GUIPrincipal.cs",
+              "ToolTip": "C:\\Users\\juanp\\OneDrive\\Escritorio\\proyecto2Empresariales\\Proyecto2Empresariales\\ClientePublicacion\\Cliente\\Cliente\\GUIPrincipal.cs [Dise\u00F1o]",
+              "RelativeToolTip": "Cliente\\GUIPrincipal.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-28T21:18:33.044Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Libro.cs",
+              "DocumentMoniker": "C:\\Users\\juanp\\OneDrive\\Escritorio\\proyecto2Empresariales\\Proyecto2Empresariales\\ClientePublicacion\\Cliente\\Cliente\\Model\\Libro.cs",
+              "RelativeDocumentMoniker": "Cliente\\Model\\Libro.cs",
+              "ToolTip": "C:\\Users\\juanp\\OneDrive\\Escritorio\\proyecto2Empresariales\\Proyecto2Empresariales\\ClientePublicacion\\Cliente\\Cliente\\Model\\Libro.cs",
+              "RelativeToolTip": "Cliente\\Model\\Libro.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-28T21:09:56.227Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ServicioLibro.cs",
+              "DocumentMoniker": "C:\\Users\\juanp\\OneDrive\\Escritorio\\proyecto2Empresariales\\Proyecto2Empresariales\\ClientePublicacion\\Cliente\\Cliente\\Service\\ServicioLibro.cs",
+              "RelativeDocumentMoniker": "Cliente\\Service\\ServicioLibro.cs",
+              "ToolTip": "C:\\Users\\juanp\\OneDrive\\Escritorio\\proyecto2Empresariales\\Proyecto2Empresariales\\ClientePublicacion\\Cliente\\Cliente\\Service\\ServicioLibro.cs",
+              "RelativeToolTip": "Cliente\\Service\\ServicioLibro.cs",
+              "ViewState": "AQIAAHwAAAAAAAAAAAAAAJQAAAAhAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-28T21:09:36.211Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
     }
   ]
 }
