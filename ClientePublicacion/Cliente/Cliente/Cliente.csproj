@@ -81,6 +81,30 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="GUIActualizarAutor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUIActualizarAutor.Designer.cs">
+      <DependentUpon>GUIActualizarAutor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUIAgregarAutor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUIAgregarAutor.Designer.cs">
+      <DependentUpon>GUIAgregarAutor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUIBuscarAutor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUIBuscarAutor.Designer.cs">
+      <DependentUpon>GUIBuscarAutor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUIEliminarAutor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUIEliminarAutor.Designer.cs">
+      <DependentUpon>GUIEliminarAutor.cs</DependentUpon>
+    </Compile>
     <Compile Include="GUIListar.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -105,6 +129,12 @@
     <Compile Include="GUIBuscar.Designer.cs">
       <DependentUpon>GUIBuscar.cs</DependentUpon>
     </Compile>
+    <Compile Include="GUIListarAutores.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUIListarAutores.Designer.cs">
+      <DependentUpon>GUIListarAutores.cs</DependentUpon>
+    </Compile>
     <Compile Include="GUIPrincipal.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -121,6 +151,18 @@
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Service\ServicioLibro.cs" />
+    <EmbeddedResource Include="GUIActualizarAutor.resx">
+      <DependentUpon>GUIActualizarAutor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUIAgregarAutor.resx">
+      <DependentUpon>GUIAgregarAutor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUIBuscarAutor.resx">
+      <DependentUpon>GUIBuscarAutor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUIEliminarAutor.resx">
+      <DependentUpon>GUIEliminarAutor.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="GUIListar.resx">
       <DependentUpon>GUIListar.cs</DependentUpon>
     </EmbeddedResource>
@@ -135,6 +177,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="GUIAgregar.resx">
       <DependentUpon>GUIAgregar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUIListarAutores.resx">
+      <DependentUpon>GUIListarAutores.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GUIPrincipal.resx">
       <DependentUpon>GUIPrincipal.cs</DependentUpon>

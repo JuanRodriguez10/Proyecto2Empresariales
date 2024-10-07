@@ -50,7 +50,7 @@ namespace Cliente
             {
                 tituloOriginal = libroEncontrado.Titulo;
                 txtTitulo.Text = libroEncontrado.Titulo;
-                txtAutor.Text = libroEncontrado.Autor;
+                txtAutores.Text = libroEncontrado.Autor;
                 txtPaginas.Text = libroEncontrado.CantidadPaginas.ToString();
                 dpFecha.Value = libroEncontrado.FechaCreacion;
                 txtPrecio.Text = libroEncontrado.Precio.ToString();
@@ -82,7 +82,7 @@ namespace Cliente
                 double precio = double.Parse(txtPrecio.Text);
                 string nuevoTitulo = txtTitulo.Text.Trim();
                 DateTime fecha = dpFecha.Value;
-                string autor = txtAutor.Text.Trim();
+                string autor = txtAutores.Text.Trim();
 
                 bool actualizado = servicioLibro.ActualizarLibro(tituloOriginal, paginas, precio, nuevoTitulo, fecha, autor);
 
@@ -110,7 +110,7 @@ namespace Cliente
         private bool ValidarCampos()
         {
             if (string.IsNullOrWhiteSpace(txtTitulo.Text) ||
-                string.IsNullOrWhiteSpace(txtAutor.Text) ||
+                string.IsNullOrWhiteSpace(txtAutores.Text) ||
                 string.IsNullOrWhiteSpace(txtPaginas.Text) ||
                 string.IsNullOrWhiteSpace(txtPrecio.Text))
             {
@@ -124,7 +124,7 @@ namespace Cliente
         {
             txtBuscar.Text = "";
             txtTitulo.Text = "";
-            txtAutor.Text = "";
+            txtAutores.Text = "";
             txtPaginas.Text = "";
             dpFecha.Value = DateTime.Now;
             txtPrecio.Text = "";
@@ -132,6 +132,11 @@ namespace Cliente
         }
 
         private void txtPaginas_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lblAutor_Click(object sender, EventArgs e)
         {
 
         }
