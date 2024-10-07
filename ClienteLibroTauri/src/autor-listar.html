@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listar Autores</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+        }
+        .filter-container {
+            margin-bottom: 20px;
+        }
+        input[type="text"] {
+            width: 200px;
+            padding: 5px;
+            margin-right: 10px;
+        }
+        button {
+            padding: 5px 10px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+<body>
+    <h1>Listar Autores</h1>
+    
+    <div class="filter-container">
+        <label for="nacionalidadFiltro">Filtrar por nacionalidad:</label>
+        <input type="text" id="nacionalidadFiltro" placeholder="Nacionalidad del autor">
+        <button onclick="filtrarPorNacionalidad()">Filtrar</button>
+        <button onclick="listarAutores()">Listar Todos</button>
+    </div>
+
+    <table id="autoresTabla">
+        <thead>
+            <tr>
+                <th>Nombre</th>
+                <th>Edad</th>
+                <th>Nacionalidad</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Los datos de los autores se insertarán aquí -->
+        </tbody>
+    </table>
+
+    <script>
+        // Simulación de datos de autores
+        const autores = [
+            { nombre: "Autor1", edad: 45, nacionalidad: "Española" },
+            { nombre: "Autor2", edad: 38, nacionalidad: "Argentina" },
+            { nombre: "Autor3", edad: 52, nacionalidad: "Mexicana" },
+            { nombre: "Autor4", edad: 41, nacionalidad: "Colombiana" }
+        ];
+
+        function listarAutores() {
+            const tbody = document.querySelector('#autoresTabla tbody');
+            tbody.innerHTML = '';
+            autores.forEach(autor => {
+                const row = tbody.insertRow();
+                row.insertCell(0).textContent = autor.nombre;
+                row.insertCell(1).textContent = autor.edad;
+                row.insertCell(2).textContent = autor.nacionalidad;
+            });
+        }
+
+        function filtrarPorNacionalidad() {
+            const nacionalidadFiltro = document.getElementById('nacionalidadFiltro').value.toLowerCase();
+            const tbody = document.querySelector('#autoresTabla tbody');
+            tbody.innerHTML = '';
+            autores.forEach(autor => {
+                if (autor.nacionalidad.toLowerCase().includes(nacionalidadFiltro)) {
+                    const row = tbody.insertRow();
+                    row.insertCell(0).textContent = autor.nombre;
+                    row.insertCell(1).textContent = autor.edad;
+                    row.insertCell(2).textContent = autor.nacionalidad;
+                }
+            });
+        }
+
+        // Cargar todos los autores al iniciar la página
+        window.onload = listarAutores;
+    </script>
+</body>
+</html>

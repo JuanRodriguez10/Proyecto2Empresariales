@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listar Libros</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+        }
+        .filter-container {
+            margin-bottom: 20px;
+        }
+        input[type="text"] {
+            width: 200px;
+            padding: 5px;
+            margin-right: 10px;
+        }
+        button {
+            padding: 5px 10px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+<body>
+    <h1>Listar Libros</h1>
+    
+    <div class="filter-container">
+        <label for="autorFiltro">Filtrar por autor:</label>
+        <input type="text" id="autorFiltro" placeholder="Nombre del autor">
+        <button onclick="filtrarPorAutor()">Filtrar</button>
+        <button onclick="listarLibros()">Listar Todos</button>
+    </div>
+
+    <table id="librosTabla">
+        <thead>
+            <tr>
+                <th>Título</th>
+                <th>Autores</th>
+                <th>Páginas</th>
+                <th>Fecha de Publicación</th>
+                <th>Precio</th>
+                <th>Tapa Dura</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Los datos de los libros se insertarán aquí -->
+        </tbody>
+    </table>
+
+    <script>
+        // Simulación de datos de libros
+        const libros = [
+            { titulo: "Libro 1", autores: "Autor1, Autor2", paginas: 300, fecha: "2024-01-01", precio: 29.99, tapaDura: "Sí" },
+            { titulo: "Libro 2", autores: "Autor2, Autor3", paginas: 250, fecha: "2023-12-15", precio: 24.99, tapaDura: "No" },
+            { titulo: "Libro 3", autores: "Autor1, Autor3", paginas: 400, fecha: "2024-02-01", precio: 34.99, tapaDura: "Sí" },
+            { titulo: "Libro 4", autores: "Autor4", paginas: 180, fecha: "2023-11-30", precio: 19.99, tapaDura: "No" }
+        ];
+
+        function listarLibros() {
+            const tbody = document.querySelector('#librosTabla tbody');
+            tbody.innerHTML = '';
+            libros.forEach(libro => {
+                const row = tbody.insertRow();
+                row.insertCell(0).textContent = libro.titulo;
+                row.insertCell(1).textContent = libro.autores;
+                row.insertCell(2).textContent = libro.paginas;
+                row.insertCell(3).textContent = libro.fecha;
+                row.insertCell(4).textContent = `$${libro.precio}`;
+                row.insertCell(5).textContent = libro.tapaDura;
+            });
+        }
+
+        function filtrarPorAutor() {
+            const autorFiltro = document.getElementById('autorFiltro').value.toLowerCase();
+            const tbody = document.querySelector('#librosTabla tbody');
+            tbody.innerHTML = '';
+            libros.forEach(libro => {
+                if (libro.autores.toLowerCase().includes(autorFiltro)) {
+                    const row = tbody.insertRow();
+                    row.insertCell(0).textContent = libro.titulo;
+                    row.insertCell(1).textContent = libro.autores;
+                    row.insertCell(2).textContent = libro.paginas;
+                    row.insertCell(3).textContent = libro.fecha;
+                    row.insertCell(4).textContent = `$${libro.precio}`;
+                    row.insertCell(5).textContent = libro.tapaDura;
+                }
+            });
+        }
+
+        // Cargar todos los libros al iniciar la página
+        window.onload = listarLibros;
+    </script>
+</body>
+</html>
