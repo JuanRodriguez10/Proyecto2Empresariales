@@ -62,7 +62,7 @@ namespace Cliente
 
                 DateTime fecha = dpFecha.Value;
 
-                var autor = txtAutor.Text.Trim();
+                var autor = txtAutores.Text.Trim();
                 if (string.IsNullOrEmpty(autor))
                 {
                     MessageBox.Show("El autor no puede estar vacío.", "Error de entrada", MessageBoxButtons.OK, MessageBoxIcon.Error);
@@ -92,7 +92,22 @@ namespace Cliente
             txtPrecio.Text = "";
             txtTitulo.Text = "";
             dpFecha.Value = DateTime.Now;
-            txtAutor.Text = "";
+            txtAutores.Text = "";
+        }
+
+        private void lblAutor_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void checkBox1_CheckedChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

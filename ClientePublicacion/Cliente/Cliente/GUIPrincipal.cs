@@ -79,5 +79,40 @@ namespace Cliente
 
 MessageBox.Show(desarrollo, "Información", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
+
+        private void menuStrip1_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
+        {
+
+        }
+
+        private void arToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            GUIAgregarAutor gUIAgregarAutor = new GUIAgregarAutor();
+            gUIAgregarAutor.Show();
+        }
+
+        private void buscarToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            GUIBuscarAutor gUIBuscarAutor = new GUIBuscarAutor();
+            gUIBuscarAutor.Show();
+        }
+
+        private void actualizarToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            GUIActualizarAutor gUIActualizarAutor = new GUIActualizarAutor();
+            gUIActualizarAutor.Show();
+        }
+
+        private void listarToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            GUIListarAutores gUIListarAutores = new GUIListarAutores();
+            gUIListarAutores.Show();
+        }
+
+        private void eliminarToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            GUIEliminarAutor gUIEliminarAutor = new GUIEliminarAutor();
+            gUIEliminarAutor.Show();
+        }
     }
 }

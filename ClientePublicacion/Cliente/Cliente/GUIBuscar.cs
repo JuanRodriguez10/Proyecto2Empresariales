@@ -63,7 +63,7 @@ namespace Cliente
                 if (libroEncontrado != null)
                 {
                     txtTitulo.Text = libroEncontrado.Titulo;
-                    txtAutor.Text = libroEncontrado.Autor;
+                    txtAutores.Text = libroEncontrado.Autor;
                     txtPaginas.Text = libroEncontrado.CantidadPaginas.ToString();
                     dpFecha.Value = libroEncontrado.FechaCreacion;
                     txtPrecio.Text = libroEncontrado.Precio.ToString();
@@ -73,7 +73,7 @@ namespace Cliente
                 else
                 {
                     txtTitulo.Text = "";
-                    txtAutor.Text = "";
+                    txtAutores.Text = "";
                     txtPaginas.Text = "";
                     dpFecha.Value = DateTime.Now;
                     txtPrecio.Text = "";
