@@ -1,41 +1,111 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="stylesheet" href="styles.css" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Tauri App</title>
-    <script type="module" src="/main.js" defer></script>
-  </head>
-
-  <body>
-    <div class="container">
-      <h1>Welcome to Tauri!</h1>
-
-      <div class="row">
-        <a href="https://tauri.app" target="_blank">
-          <img src="/assets/tauri.svg" class="logo tauri" alt="Tauri logo" />
-        </a>
-        <a
-          href="https://developer.mozilla.org/en-US/docs/Web/JavaScript"
-          target="_blank"
-        >
-          <img
-            src="/assets/javascript.svg"
-            class="logo vanilla"
-            alt="JavaScript logo"
-          />
-        </a>
-      </div>
-
-      <p>Click on the Tauri logo to learn more about the framework</p>
-
-      <form class="row" id="greet-form">
-        <input id="greet-input" placeholder="Enter a name..." />
-        <button type="submit">Greet</button>
-      </form>
-
-      <p id="greet-msg"></p>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestión de Libros</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .menu-bar {
+            background-color: #333;
+            overflow: hidden;
+        }
+        .menu-bar a {
+            float: left;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+        .dropdown {
+            float: left;
+            overflow: hidden;
+        }
+        .dropdown .dropbtn {
+            font-size: 16px;
+            border: none;
+            outline: none;
+            color: white;
+            padding: 14px 16px;
+            background-color: inherit;
+            font-family: inherit;
+            margin: 0;
+        }
+        .menu-bar a:hover, .dropdown:hover .dropbtn {
+            background-color: #ddd;
+            color: black;
+        }
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+        .dropdown-content a {
+            float: none;
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            text-align: left;
+        }
+        .dropdown-content a:hover {
+            background-color: #ddd;
+        }
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+        #contenido {
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="menu-bar">
+        <div class="dropdown">
+            <button class="dropbtn">Archivo</button>
+            <div class="dropdown-content">
+                <a href="#">Cerrar la aplicación</a>
+            </div>
+        </div>
+        <div class="dropdown">
+            <button class="dropbtn">Libro</button>
+            <div class="dropdown-content">
+                <a href="#" onclick="abrirVentana('libro-agregar.html', 'Agregar Libro')">Agregar</a>
+                <a href="#" onclick="abrirVentana('libro-buscar.html', 'Buscar Libro')">Buscar</a>
+                <a href="#" onclick="abrirVentana('libro-actualizar.html', 'Actualizar Libro')">Actualizar</a>
+                <a href="#" onclick="abrirVentana('libro-eliminar.html', 'Eliminar Libro')">Eliminar</a>
+                <a href="#" onclick="abrirVentana('libro-listar.html', 'Listar Libros')">Listar</a>
+            </div>
+        </div>
+        <div class="dropdown">
+            <button class="dropbtn">Autor</button>
+            <div class="dropdown-content">
+                <a href="#" onclick="abrirVentana('autor-agregar.html', 'Agregar Autor')">Agregar</a>
+                <a href="#" onclick="abrirVentana('autor-buscar.html', 'Buscar Autor')">Buscar</a>
+                <a href="#" onclick="abrirVentana('autor-actualizar.html', 'Actualizar Autor')">Actualizar</a>
+                <a href="#" onclick="abrirVentana('autor-eliminar.html', 'Eliminar Autor')">Eliminar</a>
+                <a href="#" onclick="abrirVentana('autor-listar.html', 'Listar Autores')">Listar</a>
+            </div>
+        </div>
+        <a href="#" onclick="abrirVentana('acerca-de.html', 'Acerca de')">Acerca de</a>
     </div>
-  </body>
+
+    <div id="contenido">
+        <h1>Bienvenido al Sistema de Gestión de Libros</h1>
+        <p>Seleccione una opción del menú para comenzar.</p>
+    </div>
+
+    <script>
+        function abrirVentana(url, titulo) {
+            window.open(url, titulo, 'width=800,height=600');
+        }
+    </script>
+</body>
 </html>

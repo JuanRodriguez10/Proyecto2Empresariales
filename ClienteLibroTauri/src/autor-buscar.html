@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buscar Autor</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+        }
+        .search-container {
+            margin-bottom: 20px;
+        }
+        label {
+            display: inline-block;
+            width: 100px;
+        }
+        input[type="text"] {
+            width: 200px;
+            padding: 5px;
+            margin-right: 10px;
+        }
+        button {
+            padding: 5px 10px;
+        }
+        .result-container {
+            margin-top: 20px;
+        }
+        .result-container p {
+            margin: 5px 0;
+        }
+    </style>
+</head>
+<body>
+    <h1>Buscar Autor</h1>
+    
+    <div class="search-container">
+        <div>
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" placeholder="Nombre del autor">
+        </div>
+        <button onclick="buscarAutor()">Buscar</button>
+    </div>
+
+    <div class="result-container" id="resultados" style="display: none;">
+        <h2>Resultados:</h2>
+        <p><strong>Nombre:</strong> <span id="resultadoNombre"></span></p>
+        <p><strong>Edad:</strong> <span id="resultadoEdad"></span></p>
+        <p><strong>Nacionalidad:</strong> <span id="resultadoNacionalidad"></span></p>
+    </div>
+
+    <script>
+        function buscarAutor() {
+            const nombre = document.getElementById('nombre').value;
+
+            // Aquí iría la lógica para buscar el autor en la base de datos
+            // Por ahora, simularemos una respuesta
+            
+            if (nombre) {
+                // Simulación de búsqueda exitosa
+                document.getElementById('resultados').style.display = 'block';
+                document.getElementById('resultadoNombre').textContent = nombre;
+                document.getElementById('resultadoEdad').textContent = "45";
+                document.getElementById('resultadoNacionalidad').textContent = "Española";
+            } else {
+                alert("Por favor, ingrese el nombre del autor para buscar.");
+            }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Actualizar Libro</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+        }
+        .search-container, .update-container {
+            margin-bottom: 20px;
+        }
+        input[type="text"], input[type="number"], input[type="date"] {
+            width: 200px;
+            padding: 5px;
+            margin-right: 10px;
+        }
+        button {
+            padding: 5px 10px;
+        }
+        .author-container {
+            margin-top: 10px;
+        }
+        #autoresAgregados {
+            margin-top: 5px;
+            padding: 5px;
+            border: 1px solid #ddd;
+            min-height: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Actualizar Libro</h1>
+    
+    <div class="search-container">
+        <input type="text" id="buscarTitulo" placeholder="Título del libro">
+        <button onclick="buscarLibro()">Buscar</button>
+    </div>
+
+    <div class="update-container" id="actualizarForm" style="display: none;">
+        <h2>Información del Libro</h2>
+        <p><strong>Título:</strong> <input type="text" id="titulo"></p>
+        <p><strong>Número de páginas:</strong> <input type="number" id="paginas"></p>
+        <p><strong>Fecha de publicación:</strong> <input type="date" id="fechaPublicacion"></p>
+        <p><strong>Precio:</strong> <input type="number" id="precio" step="0.01"></p>
+        <p><strong>Tapa dura:</strong> <input type="checkbox" id="tapaDura"></p>
+        
+        <div class="author-container">
+            <p><strong>Autores:</strong></p>
+            <div id="autoresAgregados"></div>
+            <select id="autorCombo">
+                <option value="">Seleccione un autor</option>
+                <option value="1">Autor 1</option>
+                <option value="2">Autor 2</option>
+                <option value="3">Autor 3</option>
+            </select>
+            <button onclick="agregarAutor()">Agregar Autor</button>
+            <button onclick="eliminarAutor()">Eliminar Autor</button>
+        </div>
+
+        <button onclick="actualizarLibro()">Actualizar Libro</button>
+    </div>
+
+    <script>
+        let autoresAgregados = [];
+
+        function buscarLibro() {
+            const titulo = document.getElementById('buscarTitulo').value;
+            if (titulo) {
+                // Simulación de búsqueda exitosa
+                document.getElementById('actualizarForm').style.display = 'block';
+                document.getElementById('titulo').value = titulo;
+                document.getElementById('paginas').value = "300";
+                document.getElementById('fechaPublicacion').value = "2024-01-01";
+                document.getElementById('precio').value = "29.99";
+                document.getElementById('tapaDura').checked = true;
+                autoresAgregados = ["Autor1", "Autor2"];
+                actualizarAutoresAgregados();
+            } else {
+                alert("Por favor, ingrese el título del libro.");
+            }
+        }
+
+        function agregarAutor() {
+            const autorCombo = document.getElementById('autorCombo');
+            const autorSeleccionado = autorCombo.options[autorCombo.selectedIndex].text;
+            if (autorSeleccionado && !autoresAgregados.includes(autorSeleccionado)) {
+                autoresAgregados.push(autorSeleccionado);
+                actualizarAutoresAgregados();
+                autorCombo.selectedIndex = 0;
+            }
+        }
+
+        function eliminarAutor() {
+            const autorCombo = document.getElementById('autorCombo');
+            const autorSeleccionado = autorCombo.options[autorCombo.selectedIndex].text;
+            const index = autoresAgregados.indexOf(autorSeleccionado);
+            if (index > -1) {
+                autoresAgregados.splice(index, 1);
+                actualizarAutoresAgregados();
+                autorCombo.selectedIndex = 0;
+            }
+        }
+
+        function actualizarAutoresAgregados() {
+            document.getElementById('autoresAgregados').textContent = autoresAgregados.join(', ');
+        }
+
+        function actualizarLibro() {
+            // Aquí iría la lógica para actualizar el libro en la base de datos
+            alert("Libro actualizado con éxito");
+        }
+    </script>
+</body>
+</html>
