@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agregar Libro</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+        }
+        form {
+            max-width: 500px;
+            margin: 0 auto;
+        }
+        label {
+            display: block;
+            margin-top: 10px;
+        }
+        input, select {
+            width: 100%;
+            padding: 5px;
+            margin-top: 5px;
+        }
+        button {
+            margin-top: 10px;
+            padding: 5px 10px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+        .checkbox-container {
+            display: flex;
+            align-items: center;
+            margin-top: 10px;
+        }
+        .checkbox-container input {
+            width: auto;
+            margin-right: 10px;
+        }
+        #autoresAgregados {
+            margin-top: 5px;
+            padding: 5px;
+            border: 1px solid #ddd;
+            min-height: 20px;
+        }
+        #autorCombo {
+            width: calc(100% - 110px);
+            margin-right: 10px;
+        }
+        #agregarAutorBtn {
+            width: 100px;
+        }
+        .autor-combo-container {
+            display: flex;
+            align-items: center;
+            margin-top: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Agregar Libro</h1>
+    <form id="agregarLibroForm">
+        <label for="titulo">Título:</label>
+        <input type="text" id="titulo" name="titulo" required>
+
+        <label for="autoresAgregados">Autores agregados:</label>
+        <div id="autoresAgregados"></div>
+
+        <div class="autor-combo-container">
+            <select id="autorCombo">
+                <option value="">Seleccione un autor</option>
+                <option value="1">Autor 1</option>
+                <option value="2">Autor 2</option>
+                <option value="3">Autor 3</option>
+            </select>
+            <button type="button" id="agregarAutorBtn">Agregar Autor</button>
+        </div>
+
+        <label for="paginas">Número de páginas:</label>
+        <input type="number" id="paginas" name="paginas" required>
+
+        <label for="fechaPublicacion">Fecha de publicación:</label>
+        <input type="date" id="fechaPublicacion" name="fechaPublicacion" required>
+
+        <label for="precio">Precio:</label>
+        <input type="number" id="precio" name="precio" step="0.01" required>
+
+        <div class="checkbox-container">
+            <input type="checkbox" id="tapaDura" name="tapaDura">
+            <label for="tapaDura">Tapa dura</label>
+        </div>
+
+        <button type="submit">Agregar Libro</button>
+    </form>
+
+    <script>
+        const { invoke } = window.__TAURI__.tauri;
+        
+        const autoresAgregados = [];
+
+        async function cargarAutores() {
+            try {
+                const autores = await invoke('obtener_autores');
+                const autoresDisponibles = document.getElementById('autoresDisponibles');
+                autoresDisponibles.innerHTML = '<option value="">Seleccione un autor</option>';
+                autores.forEach(autor => {
+                    const option = document.createElement('option');
+                    option.value = autor.nombre;
+                    option.textContent = autor.nombre;
+                    autoresDisponibles.appendChild(option);
+                });
+            } catch (error) {
+                console.error('Error al cargar autores:', error);
+            }
+        }
+
+        document.getElementById('agregarAutorBtn').addEventListener('click', function() {
+            const autoresDisponibles = document.getElementById('autoresDisponibles');
+            const autorSeleccionado = autoresDisponibles.value;
+            
+            if (autorSeleccionado && !autoresAgregados.includes(autorSeleccionado)) {
+                autoresAgregados.push(autorSeleccionado);
+                actualizarAutoresAgregados();
+                autoresDisponibles.value = "";
+            }
+        });
+
+        function actualizarAutoresAgregados() {
+            const autoresAgregadosDiv = document.getElementById('autoresAgregados');
+            autoresAgregadosDiv.textContent = autoresAgregados.join(', ');
+        }
+
+        document.getElementById('agregarLibroForm').addEventListener('submit', async function(e) {
+            e.preventDefault();
+            
+            const libro = {
+                titulo: document.getElementById('titulo').value,
+                autores: autoresAgregados,
+                paginas: parseInt(document.getElementById('paginas').value),
+                fecha: document.getElementById('fechaPublicacion').value + "T00:00:00",
+                precio: parseFloat(document.getElementById('precio').value),
+                tapa_dura: document.getElementById('tapaDura').checked
+            };
+
+            try {
+                const resultado = await invoke('agregar_libro', libro);
+                if (resultado) {
+                    alert('Libro agregado con éxito');
+                    this.reset();
+                    autoresAgregados.length = 0;
+                    actualizarAutoresAgregados();
+                } else {
+                    alert('Error al agregar el libro');
+                }
+            } catch (error) {
+                console.error('Error:', error);
+                alert('Error al agregar el libro: ' + error);
+            }
+        });
+
+        document.getElementById('agregarAutorForm').addEventListener('submit', async function(e) {
+            e.preventDefault();
+            
+            const autor = {
+                nombre: document.getElementById('nombreAutor').value,
+                edad: parseInt(document.getElementById('edadAutor').value),
+                nacionalidad: document.getElementById('nacionalidadAutor').value
+            };
+
+            try {
+                const resultado = await invoke('agregar_autor', autor);
+                if (resultado) {
+                    alert('Autor agregado con éxito');
+                    this.reset();
+                    cargarAutores();  // Recargar la lista de autores
+                } else {
+                    alert('Error al agregar el autor');
+                }
+            } catch (error) {
+                console.error('Error:', error);
+                alert('Error al agregar el autor: ' + error);
+            }
+        });
+
+        // Cargar autores cuando se carga la página
+        window.addEventListener('DOMContentLoaded', cargarAutores);
+    </script>
+</body>
+</html>

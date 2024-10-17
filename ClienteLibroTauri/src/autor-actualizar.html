@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Actualizar Autor</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+        }
+        .search-container, .update-container {
+            margin-bottom: 20px;
+        }
+        input[type="text"], input[type="number"] {
+            width: 200px;
+            padding: 5px;
+            margin-right: 10px;
+        }
+        button {
+            padding: 5px 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Actualizar Autor</h1>
+    
+    <div class="search-container">
+        <input type="text" id="buscarNombre" placeholder="Nombre del autor">
+        <button onclick="buscarAutor()">Buscar</button>
+    </div>
+
+    <div class="update-container" id="actualizarForm" style="display: none;">
+        <h2>Información del Autor</h2>
+        <p><strong>Nombre:</strong> <input type="text" id="nombre"></p>
+        <p><strong>Edad:</strong> <input type="number" id="edad"></p>
+        <p><strong>Nacionalidad:</strong> <input type="text" id="nacionalidad"></p>
+        
+        <button onclick="actualizarAutor()">Actualizar Autor</button>
+    </div>
+
+    <script>
+        function buscarAutor() {
+            const nombre = document.getElementById('buscarNombre').value;
+            if (nombre) {
+                // Simulación de búsqueda exitosa
+                document.getElementById('actualizarForm').style.display = 'block';
+                document.getElementById('nombre').value = nombre;
+                document.getElementById('edad').value = "45";
+                document.getElementById('nacionalidad').value = "Española";
+            } else {
+                alert("Por favor, ingrese el nombre del autor.");
+            }
+        }
+
+        function actualizarAutor() {
+            const nombre = document.getElementById('nombre').value;
+            const edad = document.getElementById('edad').value;
+            const nacionalidad = document.getElementById('nacionalidad').value;
+
+            // Aquí iría la lógica para actualizar el autor en la base de datos
+            console.log("Actualizando autor:", { nombre, edad, nacionalidad });
+            alert("Autor actualizado con éxito");
+        }
+    </script>
+</body>
+</html>

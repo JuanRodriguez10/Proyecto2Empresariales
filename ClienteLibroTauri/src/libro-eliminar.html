@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eliminar Libro</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+        }
+        .search-container {
+            margin-bottom: 20px;
+        }
+        label {
+            display: inline-block;
+            width: 100px;
+        }
+        input[type="text"] {
+            width: 200px;
+            padding: 5px;
+            margin-right: 10px;
+        }
+        button {
+            padding: 5px 10px;
+        }
+        .result-container {
+            margin-top: 20px;
+        }
+        .result-container p {
+            margin: 5px 0;
+        }
+    </style>
+</head>
+<body>
+    <h1>Eliminar Libro</h1>
+    
+    <div class="search-container">
+        <label for="titulo">Título:</label>
+        <input type="text" id="titulo" placeholder="Título del libro">
+        <button onclick="buscarLibro()">Buscar</button>
+    </div>
+
+    <div class="result-container" id="resultados" style="display: none;">
+        <h2>Información del Libro:</h2>
+        <p><strong>Título:</strong> <span id="resultadoTitulo"></span></p>
+        <p><strong>Autores:</strong> <span id="resultadoAutores"></span></p>
+        <p><strong>Número de páginas:</strong> <span id="resultadoPaginas"></span></p>
+        <p><strong>Fecha de publicación:</strong> <span id="resultadoFecha"></span></p>
+        <p><strong>Precio:</strong> <span id="resultadoPrecio"></span></p>
+        <p><strong>Tapa dura:</strong> <span id="resultadoTapaDura"></span></p>
+        <button onclick="confirmarEliminar()">Eliminar Libro</button>
+    </div>
+
+    <script>
+        function buscarLibro() {
+            const titulo = document.getElementById('titulo').value;
+
+            if (titulo) {
+                // Simulación de búsqueda exitosa
+                document.getElementById('resultados').style.display = 'block';
+                document.getElementById('resultadoTitulo').textContent = titulo;
+                document.getElementById('resultadoAutores').textContent = "Autor1, Autor2";
+                document.getElementById('resultadoPaginas').textContent = "300";
+                document.getElementById('resultadoFecha').textContent = "2024-01-01";
+                document.getElementById('resultadoPrecio').textContent = "$29.99";
+                document.getElementById('resultadoTapaDura').textContent = "Sí";
+            } else {
+                alert("Por favor, ingrese el título del libro.");
+            }
+        }
+
+        function confirmarEliminar() {
+            const confirmacion = confirm("¿Está seguro que desea eliminar este libro?");
+            if (confirmacion) {
+                // Aquí iría la lógica para eliminar el libro de la base de datos
+                alert("Libro eliminado con éxito");
+                document.getElementById('resultados').style.display = 'none';
+                document.getElementById('titulo').value = '';
+            }
+        }
+    </script>
+</body>
+</html>

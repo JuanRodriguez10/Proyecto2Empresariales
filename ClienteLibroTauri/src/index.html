@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestión de Libros</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .menu-bar {
+            background-color: #333;
+            overflow: hidden;
+        }
+        .menu-bar a {
+            float: left;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+        .dropdown {
+            float: left;
+            overflow: hidden;
+        }
+        .dropdown .dropbtn {
+            font-size: 16px;
+            border: none;
+            outline: none;
+            color: white;
+            padding: 14px 16px;
+            background-color: inherit;
+            font-family: inherit;
+            margin: 0;
+        }
+        .menu-bar a:hover, .dropdown:hover .dropbtn {
+            background-color: #ddd;
+            color: black;
+        }
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+        .dropdown-content a {
+            float: none;
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            text-align: left;
+        }
+        .dropdown-content a:hover {
+            background-color: #ddd;
+        }
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+        #contenido {
+            padding: 20px;
+        }
+    </style>
+    <script type="module">
+        console.log("Iniciando carga de módulos Tauri");
+        try {
+            const { invoke } = await import('@tauri-apps/api/tauri');
+            const { open } = await import('@tauri-apps/api/window');
+            console.log("Módulos Tauri cargados correctamente");
+            window.tauriInvoke = invoke;
+            window.tauriOpenWindow = open;
+        } catch (e) {
+            console.error("Error al cargar módulos Tauri:", e);
+        }
+    </script>
+</head>
+<body>
+    <div class="menu-bar">
+        <div class="dropdown">
+            <button class="dropbtn">Archivo</button>
+            <div class="dropdown-content">
+                <a href="#">Cerrar la aplicación</a>
+            </div>
+        </div>
+        <div class="dropdown">
+            <button class="dropbtn">Libro</button>
+            <div class="dropdown-content">
+                <a href="#" onclick="abrirVentana('libro-agregar.html', 'Agregar Libro')">Agregar</a>
+                <a href="#" onclick="abrirVentana('libro-buscar.html', 'Buscar Libro')">Buscar</a>
+                <a href="#" onclick="abrirVentana('libro-actualizar.html', 'Actualizar Libro')">Actualizar</a>
+                <a href="#" onclick="abrirVentana('libro-eliminar.html', 'Eliminar Libro')">Eliminar</a>
+                <a href="#" onclick="abrirVentana('libro-listar.html', 'Listar Libros')">Listar</a>
+            </div>
+        </div>
+        <div class="dropdown">
+            <button class="dropbtn">Autor</button>
+            <div class="dropdown-content">
+                <a href="#" onclick="abrirVentana('autor-agregar.html', 'Agregar Autor')">Agregar</a>
+                <a href="#" onclick="abrirVentana('autor-buscar.html', 'Buscar Autor')">Buscar</a>
+                <a href="#" onclick="abrirVentana('autor-actualizar.html', 'Actualizar Autor')">Actualizar</a>
+                <a href="#" onclick="abrirVentana('autor-eliminar.html', 'Eliminar Autor')">Eliminar</a>
+                <a href="#" onclick="abrirVentana('autor-listar.html', 'Listar Autores')">Listar</a>
+            </div>
+        </div>
+        <a href="#" onclick="abrirVentana('acerca-de.html', 'Acerca de')">Acerca de</a>
+    </div>
+
+    <div id="contenido">
+        <h1>Bienvenido al Sistema de Gestión de Libros</h1>
+        <p>Seleccione una opción del menú para comenzar.</p>
+    </div>
+
+    <script>
+        console.log("Script principal iniciado");
+
+        async function abrirVentana(url, titulo) {
+            console.log(`Intentando abrir ventana: ${url}`);
+            if (window.tauriOpenWindow) {
+                try {
+                    await window.tauriOpenWindow(titulo, {
+                        url: url,
+                        title: titulo,
+                        width: 800,
+                        height: 600
+                    });
+                    console.log("Ventana abierta con Tauri");
+                } catch (error) {
+                    console.error('Error al abrir la ventana con Tauri:', error);
+                    fallbackOpenWindow(url, titulo);
+                }
+            } else {
+                console.log("Tauri no disponible, usando método fallback");
+                fallbackOpenWindow(url, titulo);
+            }
+        }
+
+        function fallbackOpenWindow(url, titulo) {
+            window.open(url, titulo, 'width=800,height=600');
+        }
+
+        // Verificar si Tauri está disponible
+        document.addEventListener('DOMContentLoaded', () => {
+            console.log("DOM cargado, verificando disponibilidad de Tauri");
+            if (window.tauriInvoke && window.tauriOpenWindow) {
+                console.log('Tauri está disponible');
+            } else {
+                console.error('Tauri no está disponible');
+                alert('Error: Tauri no está disponible. La aplicación funcionará con capacidades limitadas.');
+            }
+        });
+    </script>
+</body>
+</html>
