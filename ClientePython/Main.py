@@ -10,6 +10,14 @@ from tkcalendar import DateEntry
 BASE_URL = "http://localhost:8080"
 DOMINIO = "/autores"
 
+def main():
+    root = tk.Tk()
+    app = GUIPrincipal(root)
+    root.mainloop()
+
+if __name__ == "__main__":
+    main()
+
 class ServicioAutor:
     def __init__(self):
         self.base_url = BASE_URL
